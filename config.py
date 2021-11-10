@@ -1,4 +1,8 @@
-BOT_TOKEN = "OTA1ODUzNzEzNDg1MjcxMDkx.YYQIAw.WqJxYJCzpOaJyHwt0ekm2FY_iWc"
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 CMD_PREFIX = "!"
 TIMEZONE = "Europe/Lisbon"
 
